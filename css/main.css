@@ -133,17 +133,18 @@ a{
  .leftShadow::after{
      position: absolute;
      content: "";
-     background-image: url('../images/headbg.png');
+     background-image: url('../images/left.rec.png');
      background-repeat: no-repeat;
      width: 320px;
-     height: 995px;
+     height: 1020px;
      left: 0px;
-     bottom:-700px;
-     z-index: 1;
+     bottom:-534px;
+     z-index: 0;
  }
 
 .SectionAbout{
     position: relative;
+    z-index: 10;
 }
 
 .SectionAbout .row{
@@ -214,6 +215,7 @@ a{
 .sectionFour {
     padding-bottom:180px;
     margin: 0 auto;
+    
 }
 
  .theySaid {
@@ -243,7 +245,7 @@ a{
     width:540px;
     margin:0 15px;
     background-color:#FAFAFA;
-
+    z-index: 10;
 }
 
 .reviewers img{
