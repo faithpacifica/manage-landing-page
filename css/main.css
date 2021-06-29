@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+@import url('style.css');
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1440px;
+    background: #F2F2F2;
+    margin: 0;
+    color: #242D52;
+    font-family: 'Be Vietnam', sans-serif;
+}
+/* Common styles */
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+.getStartedButton{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    background: #F3603C;
+    box-shadow: 0px 15px 15px -10px #FF9F8E;
+    border-radius: 22px;
+    color: #FCF6F5;
+    padding:12px 32px;
+    border:none;
+}
+
+.getStartedButton:hover{
+    background: #F98F75;
+    cursor: pointer;
+}
+/* / Common styles */
+
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: url('../images/headbg.png');
+    background-repeat: no-repeat;
+   background-position: top right -15px;
+}
+/* HEADER */
+
+.main-header{
+    padding:56px 0 0 0;
+    margin-bottom:120px;
+}
+
+.main-header .row{
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+}
+.main-navbar{
+    padding: 13px 0;
+}
+.main-navbar a{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    padding:0 16px;
+    color: #242D52;
+}
+
+.main-navbar a:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* SECTION-2 BRING TOGETHER */
+
+.sectionTwo .row{
+    justify-content: space-between;
+    align-items: top;
+    padding-bottom:132px;
+}
+
+.bringTogether{
+    width:445px;
+}
+
+.main-title{
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+}
+
+.dayToday{
+    width:350px;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.5;
+    margin-bottom:40px;
+}
+
+.chartbars{
+   margin:0;
+}
+
+.twobars{
+   
+    justify-content: space-between;
+
+}
+.twoBars img{
+    margin-bottom:15px;
+    padding:0 10px;
+}
+
+.chartbars img{
+    width:260px;
+}
+
+.linebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION-3 ABOUT */
+
+.SectionAbout{
+    /* max-width:1440px; */
+    background-image: url('../images/left.rec\ .png');
+    background-repeat: no-repeat;
+    background-position: left -10px top 150px;  
+}
+
+.SectionAbout .row{
+    justify-content: space-between;
+    align-items: top;
+    padding-bottom:100px;
+}
+
+.SectionAbout .different{
+    margin-top:0;
+    margin-bottom:24px;
+    width: 445px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.714286px;
+}
+
+.different-text{
+    width:350px;
+}
+
+.rowThird{
+    display: flex;
+    flex-direction: column;
+}
+
+.innerdiv{
+    display: flex;
+    justify-content:left ;
+    align-items: top;
+}
+
+.number{
+    height:39px;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.285714px;
+    background-color: #F3603C;
+    border-radius: 39px;
+    color: #FFFFFF;
+    padding:6px 23px 10px 25px;
+    margin-right:28px;
+}
+
+.col3 p{
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.5;
+}
+
+.explanation{
+    width:445px;
+    margin-bottom:40px;
+}
+
+.explanation h3{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.285714px;
+}
+
+/* SECTION_4 */
+
+.sectionFour{
+    margin: 0 auto;
+    padding-bottom:180px;
+}
+
+ .theySaid {
+    text-align: center;
+    margin-bottom:100px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.714286px;
+
+}
+
+.sectionFour .row{
+    max-width: 100%
+
+}
+
+.sectionFour .container{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sectionFour .getStartedButton{
+    margin: 48px auto 0;
+    display: block;
+}
+
+.rewievers{
+    padding:40px;
+    position: relative;
+    text-align: center;
+    width:540px;
+    margin:0 15px;
+    background-color:#FAFAFA;
+
+}
+
+.rewievers img{
+    position: absolute;
+    top:-30px;
+    border-radius: 50%;
+}
+
+.name{
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.285714px;
+}
+
+.reviews{
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.5;
+}
+
+/* SECTION-5 SIMPLIFY */
+.sectionFive{
+    
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/oearange.jpg');
+    margin: 0 auto;
+}
+
+.sectionFive .container{
+    
+}
+.sectionFive .row{
+    padding-top:62px;
+    padding-bottom:62px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simplify h2{
+    width: 445px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.714286px;
+    color: #FFFFFF;
+}
+
+.simplify .getStartedButton{
+    background: #FFFFFF;
+    box-shadow: 0px 15px 15px -10px #DB5943;
+    border-radius: 22px;
+    color: #F3603C;
+}
+
+.simplify .getStartedButton:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* FOOTER */
+
+.main-footer{
+    margin: 0 auto;
+    
+    background: #1D1E25;
+    padding-top:62px;
+    padding-bottom:62px;
+}
+.main-footer i, .main-footer a{
+    color:#FFFFFF;
+}
+.footerRow{
+    /* max-width:1110px; */
+    justify-content: space-between;
+    align-items: top;
+}
+
+.footerRow .container{
+    
+}
+
+.footerRow .logo{
+    margin-bottom:85px;
+    color:white;
+}
+
+.socialMedia i{
+    margin-right: 13px;
+}
+
+.socialMedia i:hover{
+    color: #F3603C;
+    cursor: pointer;
+}
+
+.main-footer ul{
+    list-style: none;
+    margin:0;
+}
+
+.main-footer li{
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.234375px;
+    margin-bottom:13px;
+}
+
+.main-footer a:hover{
+    color: #F3603C;
+    cursor: pointer;
+}
+.form{
+    margin-bottom:60px;
+    
+}
+
+.form input{
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.1px;
+    color: #8D8D8D;
+    background: #FFFFFF;
+    border-radius: 22px;
+    padding:11px 41px 14px 16px;
+    border: none;
+    margin-right: 8px;
+    outline:0;
+    position: relative;
+}
+
+.form input:hover{
+    color:#F33C3C;
+    border:#F33C3C solid 1px;
+}
+
+.form .go{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FCF6F5;
+    background: #F3603C;
+    border-radius: 22px;
+    padding:13px 23px 13px 24px;
+    border: none;
+}
+.go:hover{
+    background: #F98F75;
+    cursor: pointer;
+}
+
+.allrights{
+    font-size: 13px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: -0.203125px;                                      
+    color: #FFFFFF;
+    opacity: 0.5;
+}
