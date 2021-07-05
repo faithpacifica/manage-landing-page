@@ -15,25 +15,26 @@
         <header class="main-header">
             <div class="container">
                 <div class="row">
-                    <a href="#"><img src="images/logo.svg" alt="logo"></a>
+                    <a class="logo" href="#"><img src="images/logo.svg" alt="logo"></a>
                     <nav class="main-navbar">
-                        <a href="#">Pricing</a>
-                        <a href="#">Product</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Community</a>
+                        <a href="#" class="nav-link" >Pricing</a>
+                        <a href="#" class="nav-link">Product</a>
+                        <a href="#" class="nav-link">About Us</a>
+                        <a href="#" class="nav-link">Careers</a>
+                        <a href="#" class="nav-link">Community</a>
                     </nav>
 
-                    <button class="getStartedButton">Get Started</button>
+                    <button class="getStartedButton" type="submit">Get Started</button>
+                    <img class="mobileNav" src="images/mobileNav.svg" alt="right nav">
                 </div>
             </div>
         </header>
         <!--/ Header -->
 
         <!-- SECTION-2 BRING TOGETHER -->
-        <section class="sectionTwo">
+        <section class="intro">
             <div class="container">
-                <div class="row">
+                <div class="row introRow">
                     <div class="col2 bringTogether">
                         <h1 class="main-title">Bring everyone
                             together to build
@@ -63,8 +64,7 @@
     <section class="SectionAbout">
         <div class="container">
             <div class="row">
-                <div class="col3">
-                    <div class="leftShadow"></div>
+                <div class="col3  manage">
                     <h2 class="different">What’s different about Manage?</h2>
                     <p class="different-text">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. </p>
                 </div>
@@ -73,21 +73,21 @@
                         <div class="innerdiv">
                             <div class="number">01</div>
                             <div class="explanation">
-                                <h3>Track company-wide progress</h3>
+                                <h3 class="pink">Track company-wide progress</h3>
                                 <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
                             </div>
                         </div>
                         <div class="innerdiv">
                             <div class="number">02</div>
                             <div class="explanation">
-                                <h3>Advanced built-in reports</h3>
+                                <h3 class="pink">Advanced built-in reports</h3>
                                 <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
                             </div>
                         </div>
                         <div class="innerdiv">
                             <div class="number">03</div>
                             <div class="explanation">
-                                <h3>Everything you need in one place<h3>
+                                <h3 class="pink">Everything you need in one place<h3>
                                 <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
                             </div>
                         </div>
@@ -101,15 +101,14 @@
     <!-- /SECTION-3 ABOUT -->
 
     <!-- SECTION_4 -->
-    <section class="sectionFour">
-        <!-- <div class="container"> -->
+    <section class="sectionPeopleSaid">
             <h2 class="theySaid">What they’ve said</h2>
             <div class="row">
                 <div class="col4 ">
                     <div class="reviewers">
                         <img src="images/Oval1.jpg" alt="girl image">
                         <p class="name"> Anisha Li</p>
-                        <p class="reviews">  “Manage has supercharged our team’s 
+                        <p class="review-text">  “Manage has supercharged our team’s 
                             workflow. The ability to maintain visibility on larger
                             milestones at all times keeps everyone motivated.”</p>
                     </div>
@@ -136,13 +135,19 @@
                     </div>
                 </div>
             </div>
+
+            <div class="sliders">
+                <button class="s-btn" type="button"></button>
+                <button class="s-btn colored" type="button"></button>
+                <button class="s-btn" type="button"></button>
+                <button class="s-btn" type="button"></button>
+            </div>
             <button class="getStartedButton">Get Started</button>
-        <!-- </div> -->
     </section>
     <!--/ SECTION_4 -->
 
     <!-- SECTION-5 SIMPLIFY -->
-    <section class="sectionFive">
+    <section class="orangeSection">
         <div class="container">
             <div class="row simplify">
                 <h2>Simplify how your team works today.</h2>
@@ -156,26 +161,23 @@
     <footer class="main-footer">
         <div class="container">
             <div class="row footerRow">
-                <div class="column">
+                <div class="column manageFooter">
                     <a href="#"><img class="logo" src="images/footer-logo.svg" alt="logo"></a>
                     <div class="socialMedia">
-                        <a href=""><i class="icon-facebook"></i></a>
-                        <a href=""><i class="icon-youtube"></i></a>
-                        <a href=""><i class="icon-twitter"></i></a>
-                        <a href=""><i class="icon-pinterest"></i></a>
-                        <a href=""><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-facebook"></i></a>
+                        <a href="#"><i class="icon-youtube"></i></a>
+                        <a href="#"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-pinterest"></i></a>
+                        <a href="#"><i class="icon-instagram"></i></a>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column aboutUs">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Pricing</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">About Us</a></li>
                     </ul>
-                </div>
-
-                <div class="column">
                     <ul>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Community</a></li>
@@ -183,7 +185,15 @@
                     </ul>
                 </div>
 
-                <div clas="column">
+                <!-- <div class="column careers">
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div> -->
+
+                <div class="column formColumn">
                     <form action="#" method="GET">
                         <div class="form">
                             <input type="text" placeholder="Updates in your inbox…">

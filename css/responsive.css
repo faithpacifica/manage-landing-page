@@ -1,26 +1,423 @@
-@media(max-width: 1199px) {
-    .container {
-       
-    }
-    
-}
+/* @media(max-width: 1199px) {
+   
+
+} */
 
 @media(max-width: 991px) {
-   
+    .logo {
+        margin-top: 10px;
+    }
+    .main-header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .getStartedButton, .main-navbar{
+        display:none;
+    }
+    .simplify .getStartedButton{
+        display:block;
+    }
+    .mobileNav {
+        display: block;
+    }
+    .explanation{
+        width: 100%;
+    }
+    .bringTogether{
+        padding:10px;
+    }
+    .twoBars{
+        display: flex;
+    }
+    .main-title {
+        font-size: 50px;
+        text-align: center;
+    }
+    .chartbars img {
+        width: 190px;
+    }
+    .manage{
+        width: 100%;
+        text-align: center;
+        margin:20px;
+    }
+    .SectionAbout .row{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom:0;
+    }
 
+     .different-text{
+        width:100%;
+    }
+    .different{
+        display: inline-block;
+    }
+
+    .SectionAbout::after{
+        z-index: -1;
+    }
+    .rowThird{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .form input{
+        padding: 11px 25px 14px 16px;
+    }
+    .mainFooter ul{
+        margin-right:0px;
+    }
+    .aboutUs ul{
+        margin-right:0px;
+    }
 }
+
+
 
 @media(max-width: 767px) {
-   
+    /* .container{
+        padding:0 15px;
+    } */
+    .main-navbar .getStartedButton {
+        display:none;
+    }
+    .chartbars img {
+        width: 250px;
+    }
+    .mobileNav {
+        display: block;
+    }
+    .main-header{
+        margin-bottom:0;
+    }
+    .intro .row{
+        padding-bottom:0;
+    }
+    .introRow{
+        display:block;
+    }
+    .dayToday{
+        text-align: center;
+    }
+    .main-title{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bringTogether,.dayToday {
+        width: auto;
+    }
+    .bringTogether .getStartedButton{
+        display:block;/*not working*/
+        margin-bottom:30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .twoBars{
+        justify-content:center;
+    }
+    .SectionAbout .row {
+        padding-bottom:0;
+    }
+    .sliders{
+        display:none;
+    }
+    .SectionAbout{
+        z-index: -5;
+    } 
+    .SectionAbout .row{
+        padding-bottom:0;
+    }
+    .sectionPeopleSaid {
+        padding-bottom: 80px;
+    }
 
+    .simplify .row{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .simplify h2 {
+        width: 345px;
+        font-size: 35px;
+  
+    }
+    .simplify .getStartedButton{
+        display:block;
+        padding:15px 20px;
+    }
+    .orangeSection .row {
+        padding-left:15px;
+    }
+    .footerRow{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
+    .footerRow .logo {
+        margin-bottom:70px;
+    }
+    .mainFooter{
+        position:relative;
+        padding-top:0;
+        padding-bottom:0;
+    }
+    .allrights{
+        text-align: center;
+        position:absolute;
+        bottom:10px;
+    }
+
+    .form{
+        margin-top: 30px;
+        margin-bottom:30px;
+        align-items: center;
+    }
+    .footerRow .logo {
+        margin-bottom: 20px;
+    }
+    .manageFooter{
+        order:1;
+    }
+    .twoBars img{
+        display:flex;
+        width:220px;
+    }
 }
+
+
 @media(max-width: 565px) {
-   
- 
+    .SectionAbout .row{
+        padding-bottom:0;
+    }
+    .bringTogether .getStartedButton{
+        display:block;/*not working*/
+    }
+    .footerRow{
+        flex-wrap: wrap;
+    }
+
+    .formColumn{
+        margin-top: 0px;/*ishlamayapti*/
+    }
+    .footerRow .logo {
+        margin-bottom:20px;
+    }
+    .chartbars img{
+        width:240px;
+    }
+    .twoBars{
+        display:flex;
+    }
+    .dayToday{
+        text-align: center;
+    }
+
+    .allrights{/*yuq bub qolgan*/
+        position: absolute;
+        margin-left: 35px;
+    }
+
+    .simplify .getStartedButton{
+        display:block;
+        padding: 10px 15px;
+    }
+    .main-footer {
+        position:relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .manageFooter{
+        order:1;
+        margin-bottom: 30px;
+    }
+    .sliders{/*chiqmayapti*/
+        display: block;
+        max-width:68px;
+        margin:0 auto;
+    }
+
+    .form{
+        order:1;
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 480px) {
-   
- 
+
+    .row{
+        display:flex;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+    .logo{
+        display: block;
+        margin-top: 10px;
+    }
+    .main-navbar {
+        display: none;
+    }
+
+    .main-navbar .getStartedButton {
+        display: none;
+    }
+    .main-header{
+        margin-bottom:20px;
+    }
+
+    .wrapper {
+        background-size: 100%;
+    }
+
+    .bringTogether {
+        width: 100%;
+        margin:0 15px 0 15px;
+    }
+    .bringTogether {
+        display: block;
+        text-align: center;
+    }
+    .introRow{
+        order:-1;
+
+    }
+    .chartbars {
+        margin:0 15px 0 15px;
+        padding-top: 20px;
+    }
+    .chartbars img{
+        width:180px;
+    }
+
+    .twoBars{
+        display:flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .main-title{
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .intro .row {
+        display:block;
+        padding-bottom:0;
+    }
+    .SectionAbout .different{
+        font-size:34px;
+        width:auto;
+    }
+    
+    .rowThird{
+        margin:0;
+    }
+    .number{
+        margin-right:15px;
+    }
+    .pink{
+        margin-top:0;
+        padding: 10px;
+        background-color: #FFF0EC;
+        border-radius:8px;
+    }
+    .col3{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .explanation{
+        margin-bottom:0;
+    }
+    .dayToday{
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .SectionAbout::after{
+        display:none;
+    }
+    .SectionAbout .row{
+        padding-bottom:0;
+    }
+    .theySaid{
+        margin-bottom:20px;
+        font-size: 30px;
+    }
+    .explanation h3{
+        margin-top:0;
+    }
+    .reviewers{
+        padding:25px;
+        width:355px;
+        margin-bottom:20px;
+    }
+
+    .sliders{/*chiqmayapti*/
+        display: block;
+        width:68px;
+        margin:0 auto;
+    }
+
+    .sectionPeopleSaid{
+        padding-bottom:30px;
+    }
+
+    .orangeSection .row{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .s-btn{
+        text-align: center;
+    }
+
+    .simplify h2{
+        width: 275px;
+        font-size: 34px;
+        margin-bottom:20px;
+    }
+
+    .footerRow{
+        align-items: center;
+    }
+    .manageFooter{
+        display: block;
+        order:1;
+        margin-bottom: 30px;
+    }
+    .aboutUs li{
+        display: block;
+    }
+    .careers li{
+        display: block;
+    }
+
+    .formColumn{
+        display: inline-block;
+        margin-top:0;
+    }
+    .allrights{
+        text-align: center;
+        position: absolute;
+        bottom:0;
+    }
+    .footerRow .logo{
+        margin-bottom: 20px;/*ishlamayapti*/
+    }
+    .form{
+        order:1;
+        margin-bottom:0;
+        margin-bottom: 35px;
+    }
+    .main-footer {
+        position: relative;
+        padding-top: 30px !important ;/*ishlamayapti*/
+        padding-bottom: 30px !important ;
+}
+    .aboutUs ul:last-child(){
+    margin-right:0px;
+}
+
 }

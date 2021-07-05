@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
 @import url('style.css');
+
 *{
     box-sizing: border-box;
 }
 
 body{
-    background: #F2F2F2;
     margin: 0;
     color: #242D52;
     font-family: 'Be Vietnam', sans-serif;
 }
+
 /* Common styles */
 .container {
     max-width: 1110px;
@@ -44,10 +45,9 @@ a{
 
 .wrapper{
     max-width: 100%;
-    margin: 0 auto;
     background-image: url('../images/headbg.png');
     background-repeat: no-repeat;
-   background-position: top right -15px;
+    background-position: top right -15px;
 }
 /* HEADER */
 
@@ -59,12 +59,11 @@ a{
 .main-header .row{
     justify-content: space-between;
     align-items: center;
-    margin:0;
 }
 .main-navbar{
     padding: 13px 0;
 }
-.main-navbar a{
+.nav-link{
     font-weight: 500;
     font-size: 13px;
     line-height: 19px;
@@ -72,16 +71,18 @@ a{
     color: #242D52;
 }
 
-.main-navbar a:hover{
+.nav-link:hover{
     cursor: pointer;
     opacity: 0.5;
+}
+.mobileNav{
+    display:none;
 }
 
 /* SECTION-2 BRING TOGETHER */
 
-.sectionTwo .row{
+.intro .row{
     justify-content: space-between;
-    align-items: top;
     padding-bottom:132px;
 }
 
@@ -108,7 +109,6 @@ a{
 }
 
 .twobars{
-   
     justify-content: space-between;
 
 }
@@ -129,7 +129,7 @@ a{
 
 /* SECTION-3 ABOUT */
 
- .leftShadow::after{
+ .SectionAbout::after{
      position: absolute;
      content: "";
      background-image: url('../images/left.rec.png');
@@ -148,7 +148,6 @@ a{
 
 .SectionAbout .row{
     justify-content: space-between;
-    align-items: top;
     padding-bottom:100px;
 }
 
@@ -159,15 +158,17 @@ a{
     font-weight: bold;
     font-size: 40px;
     line-height: 44px;
-    letter-spacing: -0.714286px;
+    /* letter-spacing: -0.714286px; */
 }
 
 .different-text{
     width:350px;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.5;
 }
 
 .rowThird{
-    display: flex;
     flex-direction: column;
 }
 
@@ -190,7 +191,7 @@ a{
     margin-right:28px;
 }
 
-.col3 p{
+.explanation p{
     font-size: 16px;
     line-height: 26px;
     opacity: 0.5;
@@ -211,10 +212,8 @@ a{
 
 /* SECTION_4 */
 
-.sectionFour {
+.sectionPeopleSaid {
     padding-bottom:180px;
-    margin: 0 auto;
-    
 }
 
  .theySaid {
@@ -226,13 +225,13 @@ a{
     letter-spacing: -0.714286px;
 }
 
-.sectionFour .row{
+.sectionPeopleSaid .row{
     justify-content: center;
     overflow-x: hidden;
     padding-top:50px;
 }
 
-.sectionFour .getStartedButton{
+.sectionPeopleSaid .getStartedButton{
     margin: 48px auto 0;
     display: block;
 }
@@ -264,14 +263,28 @@ a{
     letter-spacing: -0.285714px;
 }
 
-.reviews{
+.review-text{
     font-size: 16px;
     line-height: 26px;
     opacity: 0.5;
 }
+.sliders{
+    display:none;
 
+}
+.s-btn{
+    display:inline-block;
+    text-align:center;
+    width:0px;
+    height:12px;
+    border:1px solid #F3603C;
+    border-radius:50%;
+}
+.colored{
+    background-color:#F3603C ;
+}
 /* SECTION-5 SIMPLIFY */
-.sectionFive{
+.orangeSection{
     max-width: 100%;
     background-repeat: no-repeat;
     background-image: url('../images/oearange.jpg');
@@ -279,7 +292,7 @@ a{
     margin: 0 auto;
 }
 
-.sectionFive .row{
+.orangeSection .row{
     padding-top:62px;
     padding-bottom:62px;
     justify-content: space-between;
@@ -311,7 +324,7 @@ a{
 /* FOOTER */
 
 .main-footer{
-    margin: 0 auto;
+    flex-wrap: wrap;
     background-image: url('../images/footer-color.png');
     padding-top:62px;
     padding-bottom:62px;
@@ -341,7 +354,8 @@ a{
 
 .main-footer ul{
     list-style: none;
-    margin:0;
+    margin-right:50px;
+    margin-top:0;
 }
 
 .main-footer li{
@@ -389,6 +403,10 @@ a{
 
 .form input:focus ~ .error{
     visibility:visible;
+}
+.aboutUs{
+    display: flex;
+    margin-right: 50px;
 }
 
 .form input:hover{
