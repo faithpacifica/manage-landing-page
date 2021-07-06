@@ -11,7 +11,7 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    .getStartedButton, .main-navbar{
+    .main-navbar, .main-header .getStartedButton {
         display:none;
     }
     .simplify .getStartedButton{
@@ -75,9 +75,7 @@
 
 
 @media(max-width: 767px) {
-    /* .container{
-        padding:0 15px;
-    } */
+
     .main-navbar .getStartedButton {
         display:none;
     }
@@ -107,7 +105,7 @@
         width: auto;
     }
     .bringTogether .getStartedButton{
-        display:block;/*not working*/
+        display:block;
         margin-bottom:30px;
         margin-left: auto;
         margin-right: auto;
@@ -156,10 +154,9 @@
     .footerRow .logo {
         margin-bottom:70px;
     }
-    .mainFooter{
+    .main-footer{
         position:relative;
-        padding-top:0;
-        padding-bottom:0;
+
     }
     .allrights{
         text-align: center;
@@ -190,14 +187,16 @@
         padding-bottom:0;
     }
     .bringTogether .getStartedButton{
-        display:block;/*not working*/
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .footerRow{
         flex-wrap: wrap;
     }
 
     .formColumn{
-        margin-top: 0px;/*ishlamayapti*/
+        margin-top: 0px;
     }
     .footerRow .logo {
         margin-bottom:20px;
@@ -212,7 +211,7 @@
         text-align: center;
     }
 
-    .allrights{/*yuq bub qolgan*/
+    .allrights{
         position: absolute;
         margin-left: 35px;
     }
@@ -230,7 +229,7 @@
         order:1;
         margin-bottom: 30px;
     }
-    .sliders{/*chiqmayapti*/
+    .sliders{
         display: block;
         max-width:70px;
         margin:0 auto;
@@ -352,9 +351,9 @@
         margin-bottom:20px;
     }
 
-    .sliders{/*chiqmayapti*/
+    .sliders{
         display: block;
-        width:68px;
+        width:70px;
         margin:0 auto;
     }
 
