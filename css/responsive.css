@@ -17,9 +17,7 @@
     .simplify .getStartedButton{
         display:block;
     }
-    /* .mobileNav {
-        display: block;
-    } */
+
     .explanation{
         width: 100%;
     }
@@ -75,7 +73,9 @@
 
 
 @media(max-width: 767px) {
-
+    .hiddenButton{
+        display: block;
+    }
     .main-header .main-navbar {
         text-align:center;
         display:none;
