@@ -24,7 +24,9 @@ body{
 a{
     text-decoration: none;
 }
-
+.close{
+    display:none;
+}
 .getStartedButton{
     font-weight: bold;
     font-size: 13px;
@@ -41,6 +43,21 @@ a{
     background: #F98F75;
     cursor: pointer;
 }
+
+.hiddenButton{
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    padding:0;
+    border:none;
+    background-color: none;
+}
+
+.hiddenButton img{
+    width:100%;
+    margin:0;
+}
+
 /* / Common styles */
 
 .wrapper{
