@@ -70,25 +70,35 @@
     }
 }
 
-
-
 @media(max-width: 767px) {
+    /* qushganim */
     .hiddenButton{
         display: block;
     }
+
+    .hiddenButton.close{
+        display:none;
+    }
+
+    .main-header.on .close{
+        display:block;
+    }
+    .main-header.on .open{
+        display:none;
+    }
+
     .main-header .main-navbar {
         text-align:center;
         display:none;
         position:absolute;
         top:105px;
-        left:auto;
-        right:60px;
-        width: 70%;
-        height: 50%;
+        left:25px;
+        right:25px;
+        /* width: 70%; */
         background-color:white; 
         box-shadow: 0px 10px 20px rgba(80, 86, 98, 0.03);
         border-radius: 4px;
-        padding:40px 118px;
+        padding:40px 100px;
         z-index: 999;
     }
 
@@ -102,19 +112,16 @@
         letter-spacing: -0.285714px;
         color: #242D52;
     }
-
-    .wrapper{
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.33%, rgba(0, 0, 0, 0.599049) 99.79%);
-    }
-    .wrapper::after{
+   
+    .main-header::after{
         content:"";
         position:absolute;
         top:103px;
         left:24px;
         right:26px;
-        height:  810px;
-
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.33%, rgba(0, 0, 0, 0.599049) 99.79%);
     }
+    /* ----------------------- */
     .close{
         z-index:0;
         display: none;
